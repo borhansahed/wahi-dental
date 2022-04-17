@@ -1,0 +1,37 @@
+.header-container{
+    margin: 2rem  0px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+
+}
+.header-container a{
+    text-decoration: none;
+ margin-left:3.5rem;
+ font-weight: 400;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: #1D2021;
+}
+.header-container a:hover{
+ 
+
+ color: lightblue;
+}
+.header-links{
+   
+}
+.header-title h2{
+    font-size:2rem ;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ .header-title h3{
+    margin-top: 0px;
+    margin-left: 3.7rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    
+   
+}

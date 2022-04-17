@@ -7,19 +7,26 @@ import Service from './Service/Service';
 import Blogs from './Blogs/Blogs';
 import About from './About/About';
 import Login from './Login/Login';
+import Footer from './Footer/Footer';
+import NotFound from './NotFound/NotFound'
+
 
 function App() {
   return (
     <div>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Home></Home>} ></Route>
+        <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/services' element={<Service></Service>}></Route>
         <Route path='/blogs'element={<Blogs></Blogs>}></Route>
         <Route path='/about'element={<About></About>}></Route>
         <Route path='/login'element={<Login></Login>}></Route>
+        <Route path='*'element={<NotFound></NotFound>}></Route>
+
       </Routes>
+
+      <Footer></Footer>
     </div>
   );
 }
