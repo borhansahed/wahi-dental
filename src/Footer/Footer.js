@@ -21,13 +21,13 @@ const Footer = () => {
 
              </div>
              <div className='second-section'>
-              <h5 className='mb-3'><strong>Patient</strong></h5>
+              <h5 className='mb-3'><strong>Our Services</strong></h5>
               <p>For Woman</p>
               <p>For Men</p>
               <p>For Children</p>
               <p>Our Blogs</p>
              </div>
-             <div>
+             <div className='third-section'>
               <h4><strong>WAHI DENTAL STUDIO</strong> </h4>
               <h6><Link to="/login">Login</Link></h6>
               <h6><Link to="/services">Services</Link></h6>

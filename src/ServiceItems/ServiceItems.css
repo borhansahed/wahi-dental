@@ -1,6 +1,12 @@
 
  .service-items-container a{
      text-decoration: none;
+     
+    
+}
+ .service-items-container {
+    text-align: justify;
+     
     
 }
 
