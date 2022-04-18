@@ -11,6 +11,7 @@ import Footer from './Footer/Footer';
 import NotFound from './NotFound/NotFound'
 import RequireAuth from './RequireAuth/RequireAuth';
 import Checkout from './Checkout/Checkout';
+import Register from './Register/Register';
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path='/blogs'element={<Blogs></Blogs>}></Route>
         <Route path='/about'element={<About></About>}></Route>
         <Route path='/login'element={<Login></Login>}></Route>
+        <Route path='/register'element={<Register></Register>}></Route>
         <Route path='*'element={<NotFound></NotFound>}></Route>
 
       </Routes>
