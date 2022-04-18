@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../Images/hospital.jpg'
+import ServiceItems from '../ServiceItems/ServiceItems';
 import './Home.css'
 
 const Home = () => {
@@ -19,7 +20,8 @@ const Home = () => {
             </div>
         </div>
         <div>
-            <h2 className='text-center mt-5'>Services</h2>
+            <h2 className='text-center mt-5 fw-bold'>Services</h2>
+            <ServiceItems></ServiceItems>
         </div>
         </>
         
