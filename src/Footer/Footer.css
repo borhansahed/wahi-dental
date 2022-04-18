@@ -1,0 +1,31 @@
+.footer-container{
+   background: #0F2027; 
+   color: lightblue;
+     padding: 3rem 0px;
+}
+.footer-secondary-container{
+  
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23rem;
+}
+.second-section p{
+    line-height: 0.6rem;
+}
+.footer-container a{
+    text-decoration: none;
+    color: lightblue;
+}
+.copy-rights-section{
+    
+    margin-top:6rem ;
+}
+.footer-icons{
+    margin-left: 3rem;
+    display: flex;
+   gap: 1rem;
+   font-size: 1.5rem;
+}
