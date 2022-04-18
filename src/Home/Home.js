@@ -12,7 +12,7 @@ const Home = () => {
             <div className='home-title'>
                 <h1 className='main-title'>Where your smile means <br />more.</h1>
                <div>
-               <h3 className=''>
+               <h3 className='main-text'>
                 Treat your smile, treat your soul.
                 </h3>
                 <button className='btn btn-outline-primary mt-4 home-button '><Link to="/services">Book An Service</Link> </button>

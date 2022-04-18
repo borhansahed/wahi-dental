@@ -30,3 +30,41 @@
    
    
 }
+@media screen and (max-width:668px) {
+
+   .home-container{
+      flex-direction: column;
+      
+   }
+   .home-container img{
+      width: 44vh;
+   }
+   .main-title{
+      
+      font-size: 3rem;
+     left: 18%;
+      top: 55%;
+      
+   }
+   .home-title h3{
+    
+      margin-left: 4rem;
+   }
+
+   .main-text{
+      
+      position: absolute;
+      top: 63%;
+      left: 0;
+      font-size: 1.3rem;
+   }
+   .home-button{
+      
+      margin-left: 0rem;
+      position: absolute;
+      top: 80%;
+      left: 34%;
+   }
+   
+   
+}
