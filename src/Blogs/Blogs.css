@@ -1,0 +1,20 @@
+.blogs-card{
+    width: 29rem;
+    margin: 3rem auto;
+    padding: 0.7rem;
+    border: 1px solid lightblue;
+    
+}
+ @media screen and (max-width:668px) {
+
+    .blogs-card{
+        width: 20rem;
+        
+    }
+     
+    .blogs-card h3{
+        font-size: 1.2rem;
+        
+    }
+     
+ }
