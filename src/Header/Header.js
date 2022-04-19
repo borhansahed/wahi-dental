@@ -15,7 +15,7 @@ const Header = () => {
         <div className='header-container'>
             <div className='header-title'>
                <h2 > wahi dental<br /> <span>
-                 <h3>Studio</h3>  </span>  </h2>
+                 <h3>Studio</h3>  </span> </h2>
                
                    
                 </div> 

@@ -4,6 +4,7 @@ import { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../Firebase-init';
 import { useNavigate } from 'react-router-dom';
+import './SocialLogin.css'
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
@@ -35,7 +36,7 @@ const SocialLogin = () => {
                 <div style={{height:'1px' , width:'10rem' , background:'lightblue'}} className=''></div>
             </div>
        <div className='d-flex justify-content-center '>
-       <Button onClick={() => signInWithGoogle()} variant="btn btn-outline-primary d-block w-25 mb-3 d-flex justify-content-center align-items-center gap-2" type="submit">
+       <Button onClick={() => signInWithGoogle()} variant="btn btn-outline-primary d-block  mb-3 d-flex justify-content-center align-items-center gap-2 social-button" type="submit">
     <FcGoogle></FcGoogle> Google Sign in
   </Button>
        </div>
