@@ -52,6 +52,7 @@ const Checkout = () => {
     
     </Form.Text>
 </Form>
+
         </div>
     );
 };

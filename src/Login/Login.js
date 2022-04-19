@@ -5,6 +5,7 @@ import './Login.css'
 import { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../Firebase-init';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
   const [email , setEmail] = useState('');
@@ -70,9 +71,10 @@ const Login = () => {
      Not a member <Link to="/register">Register</Link>
     </Form.Text>
 </Form>
-          </div>
+  </div>
+
         </div>
-        
+        <SocialLogin></SocialLogin>
         </>
         
     );

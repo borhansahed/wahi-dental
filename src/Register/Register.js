@@ -5,6 +5,7 @@ import { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
 import auth from '../Firebase-init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 
   
@@ -54,46 +55,49 @@ const handleRegister = event =>{
 
     
     return (
+       <>
         <div>
         
-            <div className='login-container'>
-            <h3 className='text-center'>Please Register your account</h3>
-          <div   className='mx-auto'>
-          <Form onSubmit={handleRegister} className=' form-container ' >
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>Your name</Form.Label>
-    <Form.Control type="text" placeholder="Enter Name" />
-   
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
-    <Form.Control onBlur={handleEmail} type="email" placeholder="Enter email" />
-   
-  </Form.Group>
+        <div className='login-container'>
+        <h3 className='text-center'>Please Register your account</h3>
+      <div   className='mx-auto'>
+      <Form onSubmit={handleRegister} className=' form-container ' >
+<Form.Group className="mb-3" controlId="formBasicEmail">
+<Form.Label>Your name</Form.Label>
+<Form.Control type="text" placeholder="Enter Name" />
 
-  <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Password</Form.Label>
-    <Form.Control onBlur={handlePassword}  type="password" placeholder="Password" required />
-  </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicPassword">
-    <Form.Label>Confirm Password</Form.Label>
-    <Form.Control onBlur={handleConfirmPassword}  type="password" placeholder="Password" />
-  </Form.Group>
-  <p>{error}</p>
-  
-  {/* <Button variant="btn btn-outline-primary d-block w-100 mb-3 d-flex justify-content-center align-items-center gap-2" type="submit">
-  Register With  <FcGoogle></FcGoogle> 
-  </Button> */}
-  <Button variant="btn btn-outline-primary d-block w-100 mb-3" type="submit">
-    Register
-  </Button>
-  <Form.Text className=" register-text">
-     Already have a account <Link to="/login">Login</Link>
-    </Form.Text>
+</Form.Group>
+<Form.Group className="mb-3" controlId="formBasicEmail">
+<Form.Label>Email address</Form.Label>
+<Form.Control onBlur={handleEmail} type="email" placeholder="Enter email" />
+
+</Form.Group>
+
+<Form.Group className="mb-3" controlId="formBasicPassword">
+<Form.Label>Password</Form.Label>
+<Form.Control onBlur={handlePassword}  type="password" placeholder="Password" required />
+</Form.Group>
+<Form.Group className="mb-3" controlId="formBasicPassword">
+<Form.Label>Confirm Password</Form.Label>
+<Form.Control onBlur={handleConfirmPassword}  type="password" placeholder="Password" />
+</Form.Group>
+<p>{error}</p>
+
+{/* <Button variant="btn btn-outline-primary d-block w-100 mb-3 d-flex justify-content-center align-items-center gap-2" type="submit">
+Register With  <FcGoogle></FcGoogle> 
+</Button> */}
+<Button variant="btn btn-outline-primary d-block w-100 mb-3" type="submit">
+Register
+</Button>
+<Form.Text className=" register-text">
+ Already have a account <Link to="/login">Login</Link>
+</Form.Text>
 </Form>
-          </div>
-        </div>
-        </div>
+      </div>
+    </div>
+    </div>
+    <SocialLogin></SocialLogin>
+    </>
     );
 };
 
