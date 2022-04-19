@@ -6,6 +6,9 @@ import { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../Firebase-init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
   const [email , setEmail] = useState('');
@@ -24,6 +27,7 @@ const Login = () => {
   if(user){
     navigate(from , {replace : true})
   }
+  
 
 
   const handleEmail = event => {
@@ -75,6 +79,7 @@ const Login = () => {
 
         </div>
         <SocialLogin></SocialLogin>
+        
         </>
         
     );
