@@ -9,7 +9,7 @@ import About from './About/About';
 import Login from './Login/Login';
 import Footer from './Footer/Footer';
 import NotFound from './NotFound/NotFound'
-import RequireAuth from './RequireAuth/RequireAuth';
+import RequireAuth from './RequireAuth/RequireAuth'
 import Checkout from './Checkout/Checkout';
 import Register from './Register/Register';
 
@@ -26,8 +26,10 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/services' element={<Service></Service>}></Route>
         <Route path='/checkout' element={
-         
+         <RequireAuth>
            <Checkout></Checkout>
+         </RequireAuth>
+           
          
         }></Route>
         <Route path='/blogs'element={<Blogs></Blogs>}></Route>

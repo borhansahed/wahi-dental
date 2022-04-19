@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import './Login.css'
 import { FcGoogle } from "@react-icons/all-files/fc/FcGoogle";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -10,16 +10,18 @@ const Login = () => {
   const [email , setEmail] = useState('');
   const [password , setPassword] = useState('');
   const navigate = useNavigate();
+  const location = useLocation();
+  const from = location.state?.from?.pathname || '/'
   
   const [
     signInWithEmailAndPassword,
     user,
-    loading,
+   
     error,
   ] = useSignInWithEmailAndPassword(auth);
 
   if(user){
-    navigate('/home')
+    navigate(from , {replace : true})
   }
 
 
