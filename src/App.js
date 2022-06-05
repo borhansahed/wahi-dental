@@ -12,6 +12,7 @@ import NotFound from './NotFound/NotFound'
 import RequireAuth from './RequireAuth/RequireAuth'
 import Checkout from './Checkout/Checkout';
 import Register from './Register/Register';
+import SecondHeader from './Header/SecondHeader';
 
 
 
@@ -21,6 +22,7 @@ function App() {
   return (
     <div>
       <Header></Header>
+     
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>}></Route>

@@ -1,6 +1,6 @@
 # Wahi Dental Studio
 
-Live site : https://wahi-dental-studio.web.app/
+ https://wahi-dental-studio.web.app/
 
 
-## Available Scripts
+
