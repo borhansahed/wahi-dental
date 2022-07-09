@@ -1,36 +1,40 @@
-import { signOut } from 'firebase/auth';
 import React from 'react';
-import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
-import auth from '../Firebase-init';
+import { useState } from 'react';
 import './Header.css'
+import NavLinks from './NavLinks';
+import {HiMenu } from "@react-icons/all-files/hi/HiMenu";
 
 const Header = () => {
-    const [user] = useAuthState(auth);
+    const [open, setOpen] = useState(false)
 
-    const handleLogout = () =>{
-        signOut(auth);
-    }
     return (
-        <div className='header-container'>
+        <div  className='header-container'>
             <div className='header-title'>
-               <h2 > wahi dental<br /> <span>
+                <p className='lg:hidden menu'>
+                  <HiMenu onClick={()=> setOpen(!open)}></HiMenu>
+
+                </p>
+               
+               <h2 onClick={()=> setOpen(false)}> wahi dental<br /> <span>
                  <h3>Studio</h3>  </span> </h2>
                
                    
                 </div> 
-
+                <div className='navLink'>
+                  <NavLinks/>  
+                </div>
                 
-            <div className='header-links'>
-                <Link to="/home">Home</Link>
-                <Link to="/services">Service</Link>
-                <Link to="/blogs">Blogs</Link>
-                <Link to="/about">About</Link>
-               
-            </div> 
-            {
-                user ? <button onClick={handleLogout} className='btn btn-outline-primary'>Logout</button> :<Link to="/login">Login</Link>
-            }
+         <div className='hamburger-menu'>
+    {open && <NavLinks/>}
+</div>
+            
+    
+       
+    
+              
+
+           
+          
             
         </div>
     );

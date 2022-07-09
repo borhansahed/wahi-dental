@@ -12,7 +12,7 @@ import NotFound from './NotFound/NotFound'
 import RequireAuth from './RequireAuth/RequireAuth'
 import Checkout from './Checkout/Checkout';
 import Register from './Register/Register';
-import SecondHeader from './Header/SecondHeader';
+
 
 
 
