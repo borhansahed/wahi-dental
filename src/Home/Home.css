@@ -19,6 +19,7 @@
 .home-title h3{
    margin-top: 8rem;
    margin-left: 6rem;
+   color: #0d6efd;
 }
 .home-button a {
    text-decoration: none;
@@ -54,15 +55,15 @@
    .main-text{
       
       position: absolute;
-      top: 73%;
-      left: 0;
-      font-size: 1.3rem;
+      top: 78%;
+      left: 6%;
+      font-size: 1.1rem;
    }
    .home-button{
       
       margin-left: 0rem;
       position: absolute;
-      top: 90%;
+      top: 98%;
       left: 34%;
    }
    

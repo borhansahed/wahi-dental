@@ -53,6 +53,7 @@
         position: absolute;
         font-size: 25px;
         left: 7%;
+        top: 17%;
     } 
     .hamburger-menu{
    
@@ -67,11 +68,13 @@ align-items: center;
     .header-title h2{
       
 font-size: 1.5rem;
+
     }
     .header-title h3{
-        
+        position: absolute;
+        left: 28%;
 font-size: 1.1rem;
-margin-right: 5px;
+
     }
     .header-links{
         margin-right: 0rem;
@@ -94,13 +97,13 @@ margin-right: 5px;
        left: 2%;
        top: 80%;
        z-index: 100;
-       border-radius: 5px;
+       border-radius: 8px;
        padding-bottom:40px ;
     }
     
     .header-links-container a{
        margin-bottom: 8px;
-       padding-right:80px ;
+       padding-right:90px ;
        font-size: 1rem;
        
     }
